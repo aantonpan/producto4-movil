@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "964387762818",
+    "project_id": "producto4-movil",
+    "storage_bucket": "producto4-movil.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964387762818:android:12d24323f7e35121493a9b",
+        "android_client_info": {
+          "package_name": "com.wescript.producto4_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiODnoPgi4o98eYgIuqUSpThhGAEJ6174"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
