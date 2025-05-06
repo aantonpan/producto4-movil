@@ -1,0 +1,52 @@
+# 👉 Dependencias y paquetes
+node_modules/
+package-lock.json
+yarn.lock
+
+# 👉 Carpetas generadas por Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+app-example/
+
+# 👉 Archivos de entorno
+.env
+.env*.local
+expo-env.d.ts
+
+# 👉 Archivos de plataforma nativa
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# 👉 Archivos temporales de Metro bundler
+.metro-health-check*
+
+# 👉 Archivos de logs y errores
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# 👉 macOS / OS / editor
+.DS_Store
+*.pem
+
+# 👉 TypeScript
+*.tsbuildinfo
+
+# 👉 Pruebas y cobertura
+__tests__/
+coverage/
+
+# 👉 VSCode / JetBrains / editorconfig
+.vscode/
+.idea/
+*.sw?
+
+# 👉 Otros
+*.tmp
