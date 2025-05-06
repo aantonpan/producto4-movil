@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "producto3-movil",
-    "slug": "producto3-movil",
+    "name": "producto4-movil",
+    "slug": "producto4-movil",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,11 +12,7 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.anonymous.producto3movil"
+      "package": "com.wescript.producto4_app"
     },
     "web": {
       "bundler": "metro",
