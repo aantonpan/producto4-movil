@@ -61,7 +61,7 @@ Implementar la recepción de notificaciones push en una aplicación móvil desar
 
 - Token generado correctamente y visible
 - Notificaciones recibidas internamente
-- Proyecto funcional, probado y listo para entrega
+- Proyecto funcional
 
 ---
 
@@ -72,5 +72,4 @@ Implementar la recepción de notificaciones push en una aplicación móvil desar
 
 ---
 
-Este proyecto cumple con los requisitos del Producto 4 de la UOC, incluyendo los pasos 9 y 10 con justificación técnica.
 
