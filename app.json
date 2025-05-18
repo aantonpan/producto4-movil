@@ -1,22 +1,17 @@
 {
   "expo": {
-    "name": "producto4-nuevo",
-    "slug": "producto4-nuevo",
+    "name": "producto4-movil",
+    "slug": "producto4-movil",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "producto4nuevo",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "package": "com.wescript.producto4_app"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +32,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c287f64c-d762-4456-9168-3e37cf257ec8"
+      }
     }
   }
 }
