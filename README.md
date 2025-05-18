@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+# Producto 4 - Notificaciones Push con Expo y Firebase (UOC)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## ✅ Objetivo
 
-## Get started
+Implementar la recepción de notificaciones push en una aplicación móvil desarrollada con Expo Go, usando Firebase Cloud Messaging (FCM) y demostrando su funcionamiento mediante el envío desde Postman.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🧩 Tecnologías utilizadas
 
-2. Start the app
+- Expo Managed Workflow
+- Firebase Cloud Messaging (FCM)
+- expo-notifications
+- expo-device
+- Postman (para enviar notificaciones)
+- TypeScript
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🧪 Pasos realizados
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. **Creación del proyecto en Firebase**
+   - Activación de FCM
+   - Obtención del projectId
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+2. **Configuración del proyecto Expo**
+   - Registro de permisos para notificaciones
+   - Generación del Expo Push Token
+   - Visualización del token en pantalla y consola
 
-## Get a fresh project
+3. **Recepción de notificaciones**
+   - Implementación del listener `addNotificationReceivedListener`
+   - Registro de notificaciones en consola
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+4. **Envío de notificación push desde Postman**
+   - URL: `https://exp.host/--/api/v2/push/send`
+   - Método: POST
+   - Headers:
+     - Content-Type: application/json
+     - Accept: application/json
+   - Body:
+```json
+{
+  "to": "ExponentPushToken[XXXXXXXXXXXXXXX]",
+  "title": "Prueba desde Postman",
+  "body": "Esto es una notificación enviada por Postman 📲"
+}
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## ⚠️ Limitaciones y decisiones técnicas
 
-To learn more about developing your project with Expo, look at the following resources:
+- **Expo Go en iOS no muestra banners de notificación**: se detectó la recepción usando consola y `addNotificationReceivedListener`.
+- **No se usó `google-services.json`** ya que Expo Managed no lo requiere.
+- **No se usó Firebase Console** para el envío porque no acepta tokens de tipo `ExponentPushToken[...]`.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## ✅ Resultado
 
-Join our community of developers creating universal apps.
+- Token generado correctamente y visible
+- Notificaciones recibidas internamente
+- Proyecto funcional, probado y listo para entrega
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 📎 Archivos relevantes
+
+- `firebase/notifications.ts` – lógica para permisos y obtención de token
+- `app/Home.tsx` – vista principal que muestra el token y escucha notificaciones
+
+---
+
+Este proyecto cumple con los requisitos del Producto 4 de la UOC, incluyendo los pasos 9 y 10 con justificación técnica.
+
